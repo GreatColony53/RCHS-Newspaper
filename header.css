@@ -1,3 +1,13 @@
+/* Global Styles */
+html, body {
+  color: #222;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-width: 100%;
+}
+
 header {
   padding: 10px 20px;
   background-color: #bd67c7;
@@ -6,7 +16,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-width: max-content;
+  min-width: 640px;
   gap: 20px;
 }
 

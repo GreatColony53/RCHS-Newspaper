@@ -1,16 +1,6 @@
-/* Global Styles */
-html, body {
-  color: #222;
-  background-color: #fdfdfd;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  min-width: 100%;
-}
-
 .main-content {
   width: 100%;
-  min-width: 675px;
+  min-width: 680px;
   padding: 0;
   margin: 0;
 }

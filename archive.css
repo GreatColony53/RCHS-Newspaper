@@ -1,0 +1,45 @@
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.grid-header,
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.grid-header {
+  font-weight: bold;
+  background-color: #620055;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.grid-row:hover {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+  .grid-header,
+  .grid-row {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-header div::before,
+  .grid-row div::before {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .grid-header div:nth-child(1)::before { content: "Date"; }
+  .grid-header div:nth-child(2)::before { content: "Title"; }
+  .grid-header div:nth-child(3)::before { content: "Author"; }
+}

@@ -1,0 +1,21 @@
+.main-content {
+  width: 100%;
+  min-width: 680px;
+  padding: 0;
+  margin: 0;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  height: 700px;
+}
+
+#newClubImg {
+    height: 100%;
+}
