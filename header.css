@@ -1,0 +1,66 @@
+header {
+  padding: 10px 20px;
+  background-color: #bd67c7;
+  border-bottom: 3px solid #620055;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: max-content;
+  gap: 20px;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.left-header a {
+    text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.site-title {
+  font-size: 2em;
+  margin: 0;
+  color: #fff;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: max-content;
+  margin: 0;
+  gap: 10px;
+}
+
+.right-header a {
+  width: 25%;
+  height: 40px;
+  background-color: inherit;
+  color: #fff;
+  border: 0px;
+  border-radius: 4px;
+  padding: 6px;
+  line-height: 40px;
+  text-decoration: none;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.right-header a:hover {
+  background-color: #620055;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
