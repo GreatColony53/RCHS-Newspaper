@@ -9,16 +9,23 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <div class="left-header">
-      <img src="assets/newsLogo.png" alt="RCHS News Logo" class="logo" />
-      <h1 class="site-title">RCHS News</h1>
-    </div>
-    <div class="right-header">
-      <a href="home.html">Home</a>
-      <a href="today.html">Today</a>
-      <a href="archive.html">Archive</a>
-      <a href="about.html">About</a>
-    </div>
+  <header id = "header-container">
+    <script>
+      fetch('header.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
   </header>
+  <!-- Footer -->
+  <footer id = "footer-container" class="site-footer">
+    <script>
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+  </footer>
 </body>
