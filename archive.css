@@ -26,3 +26,14 @@
 .grid-row:hover {
   background-color: #f9f9f9;
 }
+
+.grid-row div a {
+  text-decoration: none;
+  color: #620055;
+}
+
+.grid-row div a:hover {
+  background-color: #620055;
+  color: #fff;
+  text-decoration: none;
+}

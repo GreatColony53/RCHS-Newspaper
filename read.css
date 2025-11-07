@@ -1,0 +1,41 @@
+.main-content {
+  width: 100%;
+  min-width: 680px;
+  padding: 0;
+  margin: 0;
+}
+
+.read-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  padding: 15px;
+}
+
+.read-info {
+  align-self: flex-start;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.read-info h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.read-info p {
+  margin: 4px 0;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.read-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

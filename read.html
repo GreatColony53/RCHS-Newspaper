@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Read - The Monthly Monarch</title>
+  <link rel="stylesheet" href="read.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header id = "header-container">
+    <script>
+      fetch('header.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+  </header>
+
+  <main class="main-content">
+        <section class = "read-article">
+            <div class = "read-info">
+                <h1 id = "title">This is the amazing title</h1>
+                <p id = "date"></p>
+                <p id = "author"></p>
+            </div>
+            <div class = "read-img">
+                <img id = "article" alt="An image featuring this weeks article">
+            </div>
+
+            <script>
+                const currentArticleInfo = JSON.parse(localStorage.getItem("currentArticle"));
+                console.log(currentArticleInfo)
+
+                const title = document.getElementById("title");
+                title.textContent = currentArticleInfo.title;
+
+                const date = document.getElementById("date");
+                date.textContent = currentArticleInfo.date;
+
+                const author = document.getElementById("author");
+                author.textContent = currentArticleInfo.author;
+                
+                const article = document.getElementById("article");
+                article.src = "/allArticles/" + currentArticleInfo.fileName;
+            </script>
+            
+        </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id = "footer-container" class="site-footer">
+    <script>
+      fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+  </footer>
+</body>
+</html>
