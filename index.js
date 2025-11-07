@@ -17,7 +17,7 @@ function createFeatureArticle(item, section) {
 
     const img = document.createElement('img');
     img.id = 'featured-image';
-    img.src = "/allArticles/" + item.fileName;
+    img.src = "allArticles/" + item.fileName;
     img.alt = "Main Article Image";
 
     // Create text container
@@ -82,7 +82,7 @@ function createArticleCard(item, section) {
 
     // Create image element
     const img = document.createElement('img');
-    img.src = "/allArticles/" + item.fileName;
+    img.src = "allArticles/" + item.fileName;
     img.alt = 'Article Image';
 
     // Create text container
