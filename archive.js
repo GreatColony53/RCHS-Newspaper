@@ -42,7 +42,7 @@ function createNewRow(item) {
 
 
 console.log("Loading Archive...");
-fetch('manifest.json')
+fetch('allArticles/manifest.json')
   .then(response => response.json())
   .then(data => {
     grid.className = "grid-content";
