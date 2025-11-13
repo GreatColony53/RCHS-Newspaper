@@ -110,7 +110,7 @@ function createArticleCard(item, section) {
 
 
 console.log("Loading Home Page...");
-fetch('manifest.json')
+fetch('allArticles/manifest.json')
   .then(response => response.json())
   .then(data => {
     data.forEach(item => {
