@@ -6,5 +6,21 @@
     "author": "Dylan Louette",
     "fileName": "Knowledge Bowl Generic Meeting Info.png",
     "location": "feature"
+  },
+  {
+    "date": "2025-11-13",
+    "title": "New Club Alert",
+    "desc": "Read more on the new newspaper club at Rancho.",
+    "author": "Sydney Solis",
+    "fileName": "newspaperclubintroduction.jpg",
+    "location": "topArticle"
+  },
+  {
+    "date": "2025-11-13",
+    "title": "Club Logo",
+    "desc": "See the club logo!",
+    "author": "Sydney Solis, Naomi Davies",
+    "fileName": "newspaperclublogo.jpg",
+    "location": "archive"
   }
 ]
