@@ -1,4 +1,5 @@
-
+const feature = document.getElementById("feature");
+const topArticle = document.getElementById("topArticle");
 
 /* FEATURED ARTICLE HTML 
 <img id = "featured-image" src="" alt="Main article image"  />
@@ -11,13 +12,14 @@
 </div> 
 */
 
-function createFeatureArticle(item, section) {
+function createFeatureArticle(item) {
     const card = document.createElement('div');
     card.className = 'feature-card';
 
     const img = document.createElement('img');
     img.id = 'featured-image';
-    img.src = "allArticles/" + item.fileName;
+    
+    img.src = "allArticles/" + item.folder + "/" + item.cover;
     img.alt = "Main Article Image";
 
     // Create text container
@@ -50,8 +52,8 @@ function createFeatureArticle(item, section) {
     textDiv.appendChild(summary);
     textDiv.appendChild(link);
 
-    section.appendChild(img);
-    section.appendChild(textDiv);
+    feature.appendChild(img);
+    feature.appendChild(textDiv);
 }
 
 
@@ -65,7 +67,7 @@ function createFeatureArticle(item, section) {
 </div>
 */
 
-function createArticleCard(item, section) {
+function createArticleCard(item) {
     // Makes the entire card a link
     const link = document.createElement('a');
     link.href = "read.html";
@@ -82,7 +84,7 @@ function createArticleCard(item, section) {
 
     // Create image element
     const img = document.createElement('img');
-    img.src = "allArticles/" + item.fileName;
+    img.src = "allArticles/" + item.folder + "/" + item.cover;
     img.alt = 'Article Image';
 
     // Create text container
@@ -105,7 +107,7 @@ function createArticleCard(item, section) {
     card.appendChild(textDiv);
     
 
-    section.appendChild(link);
+    topArticle.appendChild(link);
 }
 
 
@@ -116,13 +118,12 @@ fetch('allArticles/manifest.json')
     data.forEach(item => {
       console.log(item);
       if (item.location == "archive") { return; }
-      const section = document.getElementById(item.location) // Sets the location to topArticles or Featured article
-      if (item.location == "feature") {
-        createFeatureArticle(item, section);
-        section.className = "featured-article";
-      } else if (item.location == "topArticle") {
-        createArticleCard(item, section);
-        section.className = "article-grid";
+         if (item.location == "Featured-Article") {
+        createFeatureArticle(item);
+        feature.className = "featured-article";
+      } else if (item.location == "Top-Article") {
+        createArticleCard(item);
+        topArticle.className = "article-grid";
       }
     });
   })

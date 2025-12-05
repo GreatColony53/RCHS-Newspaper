@@ -33,6 +33,13 @@
   color: #666;
 }
 
+.read-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .read-img img {
   max-width: 100%;
   height: auto;

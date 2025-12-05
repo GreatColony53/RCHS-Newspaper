@@ -26,7 +26,13 @@
                 <p id = "author"></p>
             </div>
             <div class = "read-img">
-                <img id = "article" alt="An image featuring this weeks article">
+              <!--
+                <img src = "allArticles/Issue No. 01 Oct 302025/1.png"  alt="An image featuring this weeks article">
+                <img src = "allArticles/Issue No. 01 Oct 302025/2.png"  alt="An image featuring this weeks article">
+                <img src = "allArticles/Issue No. 01 Oct 302025/3.png"  alt="An image featuring this weeks article">
+                <img src = "allArticles/Issue No. 01 Oct 302025/4.png"  alt="An image featuring this weeks article">
+                <img src = "allArticles/Issue No. 01 Oct 302025/5.png"  alt="An image featuring this weeks article">
+              -->
             </div>
 
             <script>
@@ -42,8 +48,13 @@
                 const author = document.getElementById("author");
                 author.textContent = currentArticleInfo.author;
                 
-                const article = document.getElementById("article");
-                article.src = "allArticles/" + currentArticleInfo.fileName;
+                const pages = currentArticleInfo.pages;
+                pages.forEach(page => {
+                    const img = document.createElement("img");
+                    img.src = "allArticles/" + currentArticleInfo.folder + "/" + page;
+                    img.alt = "An image featuring this weeks article";
+                    document.querySelector(".read-img").appendChild(img);
+                });
             </script>
             
         </section>
