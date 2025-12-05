@@ -1,26 +1,4 @@
 [
-  {
-    "date": "2025-11-13",
-    "title": "Knowledge Bowl Generic Meeting Info",
-    "desc": "Read more about where to join Knowledge Bowl!",
-    "author": "Dylan Louette",
-    "fileName": "Knowledge Bowl Generic Meeting Info.png",
-    "location": "feature"
-  },
-  {
-    "date": "2025-11-13",
-    "title": "New Club Alert",
-    "desc": "Read more on the new newspaper club at Rancho.",
-    "author": "Sydney Solis",
-    "fileName": "newspaperclubintroduction.jpg",
-    "location": "topArticle"
-  },
-  {
-    "date": "2025-11-13",
-    "title": "Club Logo",
-    "desc": "See the club logo!",
-    "author": "Sydney Solis, Naomi Davies",
-    "fileName": "newspaperclublogo.jpg",
-    "location": "archive"
-  }
+  {"date":"2025-12-05","title":"Halloween Edition","desc":"Read everything spooky going on at Rancho Campana!","author":"The News Team","location":"Featured-Article","folder":"Issue No.1 Oct. 302025","cover":"1.png","pages":["1.png","2.png","3.png","4.png","5.png"]},
+  {"date":"2025-12-05","title":"Halloween Edition","desc":"Read everything spooky going on at Rancho Campana!","author":"The News Team","location":"Featured-Article","folder":"Issue No.1 Oct. 302025","cover":"1.png","pages":["1.png","2.png","3.png","4.png","5.png"]}
 ]
