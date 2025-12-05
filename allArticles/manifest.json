@@ -1,2 +1,18 @@
 [
+  {
+  "date": "2025-10-30",
+  "title": "Halloween Addition - The Monthly Monarch",
+  "desc": "Read about everything spooky going on at Rancho Campana!",
+  "author": "The News Team",
+  "location": "Featured-Article",
+  "folder": "Issue No. 01 Oct 302025",
+  "cover": "1.png",
+  "pages": [
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png"
+  ]
+  },
 ]
