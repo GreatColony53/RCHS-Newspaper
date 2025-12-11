@@ -14,5 +14,20 @@
     "4.png",
     "5.png"
   ]
-  }
+  },{
+  "date": "2025-12-11",
+  "title": "Halloween 2 Top-Article Example",
+  "desc": "Description",
+  "author": "Authors",
+  "location": "Top-Article",
+  "folder": "Issue No. 01 Oct 302025",
+  "cover": "1.png",
+  "pages": [
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png"
+  ]
+}
 ]
